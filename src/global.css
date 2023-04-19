@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Roboto;
+}
+
+body {
+  display: relative;
+}
+
+.mentor-select-con {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #6a63f5;
+  z-index: 1;
+}
+
+.input-card {
+  -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.1);
+  height: 300px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  background-color: white;
+  z-index: 3;
+}
+
+.input-card h4 {
+  color: rgb(103, 103, 103);
+}
+
+.input-card input {
+  width: 200px;
+  padding: 15px 20px;
+  outline-color: #6a63f5;
+  border: 0.2px solid #aeaeae;
+  border-radius: 30px;
+  margin-top: 10px;
+}
+
+#mentors {
+  border: none;
+  outline: none;
+}
+
+.mentor-sel-button {
+  margin-top: 10px;
+  padding: 15px;
+  width: 200px;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: #6a63f5;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.mentor-sel-button:active {
+  background-color: #463cfb;
+}
+
+.nav-con {
+  display: flex;
+  color: #6a63f5 !important;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.1);
+}
+
+.EditMarksModal {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  z-index: 2;
+  top: 0px;
+  left: 0px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.EditMarksModal-shadow {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  /* z-index: 2; */
+  top: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.207);
+}
+
+.demo {
+  margin-top: 30px;
+  color: #5b5b5b;
+  font-size: 15px;
+}
+
+.assigned-stu-con {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.student-card {
+  min-width: 200px;
+  min-height: 200px;
+  -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  /* background-color:#6a63f5; */
+  border-radius: 10px;
+  color: rgb(65, 65, 65);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.student-card-uns{
+	align-items: center;
+	justify-content: center;
+}
+
+.card-top {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #6a63f5;
+  color: white;
+}
+
+.card-bottom {
+  height: 150px;
+  width: 100%;
+  display: flex;
+  padding: 20px;
+  /* align-items: center; */
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.student-assign-con {
+  height: 100%;
+  width: 100%;
+}
+
+.student-nav {
+  margin-top: 20px;
+  padding: 30px;
+}
+
+.nav-extras {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.change-mentor {
+  margin: 0px 0px 0px 20px;
+}
+
+.card-bottom-uns{
+	align-items: center;
+	justify-content: center;
+}
+
+.all-student-con{
+	/* height: 100vh; */
+	width: 100%;
+	padding: 40px;
+	display: flex;
+  flex-wrap: wrap;
+	/* flex-direction: column; */
+}
+
+.all-card{
+	height: 100px;
+	background-color: #6a63f5;
+	margin: 10px;
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	color: white;
+	min-width: 200px;
+	padding: 20px;
+}
+
+.submit-all{
+	position: absolute;
+	bottom: 50px;
+	right: 50px;
+}
+
+.student-assignmnet-con{
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.left{
+  width: 50%;
+  height: 100%;
+  /* background-color: #463cfb; */
+}
+
+.right{
+  width: 50%;
+  height: 100vh;
+  background-color:#6a63f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stu-card{
+  height: 300px;
+  width: 300px;
+  border-radius: 20px;
+  background-color: white;
+}
